@@ -1,0 +1,31 @@
+body {
+    /*jute pour la mise en page*/
+    font-family: 'avenir', sans-serif;
+    background: #282a36;
+    height: 100vh;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+/*cursor*/
+#autotext {
+    border-right: 0.15em solid #1ddb00;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+/* blink (clignotement) */
+@keyframes blink {
+    /* from to, tu va DE (from) À (to), ne pas donner de valeur a from done l'effet de clignotement.*/
+    from,
+    to {
+        border-color: transparent;
+    }
+    /* a 50% de l'animation, change la couleur de la bordure.*/
+    50% {
+        border-color: #1ddb00;
+    }
+}
